@@ -1,0 +1,22 @@
+{
+  "name": "tastemaker",
+  "description": "Gives an AI real design taste so generated UIs don't look AI-made: grounds palettes in real pixels (deterministic extraction), five WCAG-contrast-checked palette+type presets, and a taste profile that compounds across projects. Repackaged for Cowork (the marketing site is not vendored).",
+  "author": {
+    "name": "codeswithroh",
+    "url": "https://github.com/codeswithroh"
+  },
+  "homepage": "https://github.com/codeswithroh/tastemaker",
+  "repository": "https://github.com/codeswithroh/tastemaker",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "ui",
+    "palette",
+    "typography",
+    "taste",
+    "frontend",
+    "contrast",
+    "anti-slop"
+  ],
+  "version": "0.1.0+gfe6b9eb"
+}

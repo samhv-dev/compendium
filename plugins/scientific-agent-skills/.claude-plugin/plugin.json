@@ -1,0 +1,24 @@
+{
+  "name": "scientific-agent-skills",
+  "description": "148+ scientific & research skills from K-Dense (bioinformatics, cheminformatics, clinical research & precision medicine, medical imaging, ML, literature review, peer review, hypothesis generation, 100+ scientific databases). Repackaged for Cowork. Large plugin — disable individual skills you don't need; each skill's own license is preserved in its SKILL.md metadata.",
+  "author": {
+    "name": "K-Dense Inc.",
+    "url": "https://github.com/K-Dense-AI"
+  },
+  "homepage": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "repository": "https://github.com/K-Dense-AI/scientific-agent-skills",
+  "license": "MIT",
+  "keywords": [
+    "science",
+    "research",
+    "bioinformatics",
+    "cheminformatics",
+    "clinical",
+    "medical",
+    "genomics",
+    "literature",
+    "peer-review",
+    "databases"
+  ],
+  "version": "2.53.0+g3f825ca"
+}

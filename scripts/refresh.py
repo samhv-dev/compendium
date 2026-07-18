@@ -45,7 +45,8 @@ CC_ONLY_KEYS = ["hooks", "mcpServers", "lspServers", "commands", "agents",
                 "statusLine", "statusline", "outputStyles"]
 # Repo-meta files that should not be copied inside a skill directory.
 SKILL_DENYLIST = {"LICENSE", "LICENSE.md", "LICENSE.txt", "README.md", "CHANGELOG.md",
-                  "CONTRIBUTING.md", ".git", ".gitignore", ".DS_Store"}
+                  "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md", ".git", ".gitignore",
+                  ".github", ".DS_Store"}
 
 
 def run(args, **kw):
@@ -73,12 +74,13 @@ def frontmatter_version(path):
     return v.group(1).strip() if v else None
 
 
-def copy_skill(src_dir, dest_dir):
+def copy_skill(src_dir, dest_dir, exclude=()):
     src_dir = pathlib.Path(src_dir)
     dest_dir = pathlib.Path(dest_dir)
+    exclude = set(exclude)
     dest_dir.mkdir(parents=True, exist_ok=True)
     for item in src_dir.iterdir():
-        if item.name in SKILL_DENYLIST:
+        if item.name in SKILL_DENYLIST or item.name in exclude:
             continue
         target = dest_dir / item.name
         if item.is_dir():
@@ -168,8 +170,13 @@ def build_plugin(spec):
 
     # ---- skills ----
     skills_root = clone_dir / spec.get("skills_src", "") if spec.get("skills_src") else clone_dir
-    for s in spec["skills"]:
-        copy_skill(skills_root / s["src"], pdir / "skills" / s["dest"])
+    skills_spec = spec["skills"]
+    if skills_spec == "*":  # vendor every skill subdir under skills_src
+        skills_spec = [{"src": d.name, "dest": d.name}
+                       for d in sorted(skills_root.iterdir())
+                       if d.is_dir() and not d.name.startswith(".")]
+    for s in skills_spec:
+        copy_skill(skills_root / s["src"], pdir / "skills" / s["dest"], exclude=s.get("exclude", ()))
 
     # ---- license + source ----
     lic = spec.get("license_src")
