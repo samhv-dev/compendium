@@ -1,17 +1,13 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "compendium",
   "owner": {
     "name": "samhv-dev"
   },
   "description": "A curated toolbox of hand-picked Claude-Code skills repackaged as Cowork plugins, each credited to its upstream author and kept current automatically.",
-  "metadata": {
-    "pluginRoot": "./plugins"
-  },
   "plugins": [
     {
       "name": "clarify-crit",
-      "source": "clarify-crit",
+      "source": "./plugins/clarify-crit",
       "description": "Refines complex, incomplete, ambiguous, conflicted, or high-consequence requests before acting, using the CRIT method (Context, Role, Interview, Task). Resolves material uncertainty with the minimum questions and minimum visible structure, then answers directly or hands back a short portable brief. Invoke by name with 'CRIT' or 'Clarify'.",
       "version": "1.2.1",
       "author": {
@@ -33,7 +29,7 @@
     },
     {
       "name": "improve",
-      "source": "improve",
+      "source": "./plugins/improve",
       "description": "Point it at a codebase and it figures out what's worth doing — bugs, perf, tech debt, what to build next — then writes plans any agent can execute. It can hand the work to a cheaper model and review the result. It never edits your code.",
       "version": "1.0.0",
       "author": {
@@ -54,7 +50,7 @@
     },
     {
       "name": "ponytail",
-      "source": "ponytail",
+      "source": "./plugins/ponytail",
       "description": "Lazy senior dev mode. Forces the simplest, shortest solution that actually works: YAGNI, stdlib first, no unrequested abstractions.",
       "version": "4.8.4",
       "author": {
@@ -67,7 +63,7 @@
     },
     {
       "name": "emilkowalski-design",
-      "source": "emilkowalski-design",
+      "source": "./plugins/emilkowalski-design",
       "description": "Design-engineering and animation skills from Emil Kowalski: UI polish and animation decisions, Apple-style fluid motion, a strict animation review, a codebase animation audit/planner, a find-animation-opportunities pass, and a reverse-lookup motion vocabulary.",
       "version": "0.1.0+g6bf2443",
       "author": {

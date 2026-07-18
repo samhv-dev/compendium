@@ -187,7 +187,7 @@ def marketplace_entry(spec, version):
     credit = spec.get("credit") or spec.get("wrapper_plugin_json") or {}
     entry = {
         "name": spec["name"],
-        "source": spec["name"],  # resolved under metadata.pluginRoot = ./plugins
+        "source": f"./plugins/{spec['name']}",  # explicit relative path (no pluginRoot dependency)
         "description": manifest.get("description", ""),
         "version": version or manifest.get("version", "0.0.0"),
     }
@@ -212,11 +212,9 @@ def main():
         entries.append(marketplace_entry(spec, version))
 
     marketplace = {
-        "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
         "name": REG["marketplace"]["name"],
         "owner": {"name": "samhv-dev"},
         "description": "A curated toolbox of hand-picked Claude-Code skills repackaged as Cowork plugins, each credited to its upstream author and kept current automatically.",
-        "metadata": {"pluginRoot": "./plugins"},
         "plugins": entries,
     }
     MP_PATH.parent.mkdir(parents=True, exist_ok=True)
