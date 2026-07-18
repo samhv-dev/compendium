@@ -200,6 +200,64 @@
           "design-engineering"
         ]
       }
+    },
+    {
+      "name": "superpowers-extracts",
+      "kind": "skill-wrap",
+      "track": true,
+      "upstream": {
+        "owner": "obra",
+        "repo": "superpowers",
+        "ref": null
+      },
+      "skills_src": "skills",
+      "skills": [
+        {
+          "dest": "verification-before-completion",
+          "src": "verification-before-completion"
+        },
+        {
+          "dest": "writing-plans",
+          "src": "writing-plans"
+        },
+        {
+          "dest": "writing-skills",
+          "src": "writing-skills"
+        },
+        {
+          "dest": "systematic-debugging",
+          "src": "systematic-debugging"
+        },
+        {
+          "dest": "brainstorming",
+          "src": "brainstorming"
+        }
+      ],
+      "license_src": "LICENSE",
+      "version": {
+        "type": "sha",
+        "base": "0.1.0"
+      },
+      "wrapper_plugin_json": {
+        "name": "superpowers-extracts",
+        "description": "Five general-purpose discipline skills extracted from Jesse Vincent's superpowers and repackaged for Cowork: verification-before-completion, writing-plans, writing-skills, systematic-debugging, and brainstorming. The code/git/agent-orchestration skills from superpowers are intentionally omitted.",
+        "author": {
+          "name": "Jesse Vincent (obra)",
+          "url": "https://github.com/obra"
+        },
+        "homepage": "https://github.com/obra/superpowers",
+        "repository": "https://github.com/obra/superpowers",
+        "license": "MIT",
+        "keywords": [
+          "verification",
+          "planning",
+          "skill-authoring",
+          "debugging",
+          "brainstorming",
+          "workflow",
+          "discipline"
+        ]
+      }
     }
   ]
 }
