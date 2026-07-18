@@ -1,0 +1,21 @@
+{
+  "name": "clarify-crit",
+  "description": "Refines complex, incomplete, ambiguous, conflicted, or high-consequence requests before acting, using the CRIT method (Context, Role, Interview, Task). Resolves material uncertainty with the minimum questions and minimum visible structure, then answers directly or hands back a short portable brief. Invoke by name with 'CRIT' or 'Clarify'.",
+  "author": {
+    "name": "lanveric",
+    "url": "https://github.com/lanveric"
+  },
+  "homepage": "https://github.com/lanveric/clarify-crit",
+  "repository": "https://github.com/lanveric/clarify-crit",
+  "license": "MIT",
+  "keywords": [
+    "clarify",
+    "crit",
+    "request-refinement",
+    "prompt",
+    "intake",
+    "ambiguity",
+    "brief"
+  ],
+  "version": "1.2.1"
+}

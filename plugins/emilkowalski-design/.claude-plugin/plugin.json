@@ -1,0 +1,21 @@
+{
+  "name": "emilkowalski-design",
+  "description": "Design-engineering and animation skills from Emil Kowalski: UI polish and animation decisions, Apple-style fluid motion, a strict animation review, a codebase animation audit/planner, a find-animation-opportunities pass, and a reverse-lookup motion vocabulary.",
+  "author": {
+    "name": "Emil Kowalski",
+    "url": "https://github.com/emilkowalski"
+  },
+  "homepage": "https://github.com/emilkowalski/skills",
+  "repository": "https://github.com/emilkowalski/skills",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "animation",
+    "motion",
+    "ui",
+    "css",
+    "frontend",
+    "design-engineering"
+  ],
+  "version": "0.1.0+g6bf2443"
+}

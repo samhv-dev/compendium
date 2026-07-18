@@ -1,0 +1,205 @@
+{
+  "_comment": "Provenance + refresh config for every plugin in the compendium marketplace. scripts/refresh.py reads this to re-vendor each plugin from its upstream GitHub source. kind: 'plugin' = upstream is itself a Claude plugin (copy its .claude-plugin + skills); 'skill-wrap' = upstream is a bare skills repo (keep our wrapper plugin.json, vendor the named skills); 'local' = authored in-house, no upstream, never auto-refreshed.",
+  "marketplace": {
+    "name": "compendium",
+    "repo": "samhv-dev/compendium",
+    "url": "https://github.com/samhv-dev/compendium"
+  },
+  "plugins": [
+    {
+      "name": "clarify-crit",
+      "kind": "skill-wrap",
+      "track": true,
+      "upstream": {
+        "owner": "lanveric",
+        "repo": "clarify-crit",
+        "ref": null
+      },
+      "skills_src": "",
+      "skills": [
+        {
+          "dest": "clarify-crit",
+          "src": "clarify-crit"
+        }
+      ],
+      "license_src": "clarify-crit/LICENSE",
+      "version": {
+        "type": "skillmd",
+        "path": "clarify-crit/SKILL.md",
+        "base": "0.0.0"
+      },
+      "wrapper_plugin_json": {
+        "name": "clarify-crit",
+        "description": "Refines complex, incomplete, ambiguous, conflicted, or high-consequence requests before acting, using the CRIT method (Context, Role, Interview, Task). Resolves material uncertainty with the minimum questions and minimum visible structure, then answers directly or hands back a short portable brief. Invoke by name with 'CRIT' or 'Clarify'.",
+        "author": {
+          "name": "lanveric",
+          "url": "https://github.com/lanveric"
+        },
+        "homepage": "https://github.com/lanveric/clarify-crit",
+        "repository": "https://github.com/lanveric/clarify-crit",
+        "license": "MIT",
+        "keywords": [
+          "clarify",
+          "crit",
+          "request-refinement",
+          "prompt",
+          "intake",
+          "ambiguity",
+          "brief"
+        ]
+      }
+    },
+    {
+      "name": "improve",
+      "kind": "plugin",
+      "track": true,
+      "upstream": {
+        "owner": "shadcn",
+        "repo": "improve",
+        "ref": null
+      },
+      "plugin_src": ".claude-plugin",
+      "skills_src": "skills",
+      "skills": [
+        {
+          "dest": "improve",
+          "src": "improve"
+        }
+      ],
+      "license_src": "LICENSE.md",
+      "strip_keys": [],
+      "version": {
+        "type": "plugin_json"
+      },
+      "credit": {
+        "author": {
+          "name": "shadcn",
+          "url": "https://twitter.com/shadcn"
+        },
+        "homepage": "https://github.com/shadcn/improve",
+        "repository": "https://github.com/shadcn/improve",
+        "license": "MIT"
+      }
+    },
+    {
+      "name": "ponytail",
+      "kind": "plugin",
+      "track": true,
+      "upstream": {
+        "owner": "DietrichGebert",
+        "repo": "ponytail",
+        "ref": null
+      },
+      "plugin_src": ".claude-plugin",
+      "skills_src": "skills",
+      "skills": [
+        {
+          "dest": "ponytail",
+          "src": "ponytail"
+        },
+        {
+          "dest": "ponytail-audit",
+          "src": "ponytail-audit"
+        },
+        {
+          "dest": "ponytail-debt",
+          "src": "ponytail-debt"
+        },
+        {
+          "dest": "ponytail-gain",
+          "src": "ponytail-gain"
+        },
+        {
+          "dest": "ponytail-help",
+          "src": "ponytail-help"
+        },
+        {
+          "dest": "ponytail-review",
+          "src": "ponytail-review"
+        }
+      ],
+      "license_src": "LICENSE",
+      "strip_keys": [
+        "hooks",
+        "mcpServers",
+        "commands",
+        "agents"
+      ],
+      "version": {
+        "type": "plugin_json"
+      },
+      "credit": {
+        "author": {
+          "name": "Dietrich Gebert",
+          "url": "https://github.com/DietrichGebert"
+        },
+        "homepage": "https://github.com/DietrichGebert/ponytail",
+        "repository": "https://github.com/DietrichGebert/ponytail",
+        "license": "MIT"
+      },
+      "note": "Packaged skills-only for Cowork (upstream hooks / MCP server / commands not vendored), matching the proven working package."
+    },
+    {
+      "name": "emilkowalski-design",
+      "kind": "skill-wrap",
+      "track": true,
+      "upstream": {
+        "owner": "emilkowalski",
+        "repo": "skills",
+        "ref": null
+      },
+      "skills_src": "skills",
+      "skills": [
+        {
+          "dest": "animation-vocabulary",
+          "src": "animation-vocabulary"
+        },
+        {
+          "dest": "apple-design",
+          "src": "apple-design"
+        },
+        {
+          "dest": "emil-design-eng",
+          "src": "emil-design-eng"
+        },
+        {
+          "dest": "find-animation-opportunities",
+          "src": "find-animation-opportunities"
+        },
+        {
+          "dest": "improve-animations",
+          "src": "improve-animations"
+        },
+        {
+          "dest": "review-animations",
+          "src": "review-animations"
+        }
+      ],
+      "license_src": "LICENSE",
+      "version": {
+        "type": "sha",
+        "base": "0.1.0"
+      },
+      "wrapper_plugin_json": {
+        "name": "emilkowalski-design",
+        "description": "Design-engineering and animation skills from Emil Kowalski: UI polish and animation decisions, Apple-style fluid motion, a strict animation review, a codebase animation audit/planner, a find-animation-opportunities pass, and a reverse-lookup motion vocabulary.",
+        "author": {
+          "name": "Emil Kowalski",
+          "url": "https://github.com/emilkowalski"
+        },
+        "homepage": "https://github.com/emilkowalski/skills",
+        "repository": "https://github.com/emilkowalski/skills",
+        "license": "MIT",
+        "keywords": [
+          "design",
+          "animation",
+          "motion",
+          "ui",
+          "css",
+          "frontend",
+          "design-engineering"
+        ]
+      }
+    }
+  ]
+}
