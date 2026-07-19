@@ -1,0 +1,21 @@
+{
+  "name": "claude-d3js",
+  "description": "d3-viz: a d3.js playbook for building custom, interactive data visualisations (force-directed network graphs, hierarchies, geographic projections, choreographed transitions, publication-quality SVG) beyond standard chart libraries. By Chris von Csefalvay.",
+  "author": {
+    "name": "Chris von Csefalvay",
+    "url": "https://github.com/chrisvoncsefalvay"
+  },
+  "homepage": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+  "repository": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+  "license": "UNLICENSED (no upstream license — redistributed in good faith; removed on request; see SOURCE.md)",
+  "keywords": [
+    "d3",
+    "d3js",
+    "dataviz",
+    "visualization",
+    "svg",
+    "charts",
+    "interactive"
+  ],
+  "version": "0.1.0+ge198c87"
+}

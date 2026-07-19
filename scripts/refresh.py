@@ -128,10 +128,13 @@ def write_source_md(pdir, spec, sha):
             f"**Repackaged for Claude Cowork.** The upstream project primarily targets Claude "
             f"Code; this plugin vendors its skills as a Cowork-installable package. "
             f"Claude-Code-only components ({strip}) are intentionally not included. Skill content "
-            f"is copied verbatim from upstream. Only the plugin wrapper, this SOURCE.md, and the "
-            f"bundled upstream LICENSE were added. Kept current automatically by "
-            f"`scripts/refresh.py` (see the compendium README).\n"
+            f"is copied verbatim from upstream. Only the plugin wrapper, this SOURCE.md"
+            f"{', and the bundled upstream LICENSE' if spec.get('license_src') else ''} were added. "
+            f"Kept current automatically by `scripts/refresh.py` (see the compendium README).\n"
         )
+    note = spec.get("source_note")
+    if note:
+        body += "\n---\n\n" + note.strip() + "\n"
     (pdir / "SOURCE.md").write_text(body)
 
 

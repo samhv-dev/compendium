@@ -380,6 +380,49 @@
           "databases"
         ]
       }
+    },
+    {
+      "name": "claude-d3js",
+      "kind": "skill-wrap",
+      "track": true,
+      "upstream": {
+        "owner": "chrisvoncsefalvay",
+        "repo": "claude-d3js-skill",
+        "ref": null
+      },
+      "skills_src": "",
+      "skills": [
+        {
+          "dest": "d3-viz",
+          "src": ""
+        }
+      ],
+      "license_src": null,
+      "version": {
+        "type": "sha",
+        "base": "0.1.0"
+      },
+      "source_note": "⚠️ **NO UPSTREAM LICENSE.** The source repository ships without a LICENSE file, so it is technically all-rights-reserved. It is redistributed here in good faith, with full attribution to the author, solely to make it installable in Cowork. **It will be removed immediately on the author's request.** Author: Chris von Csefalvay — https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+      "wrapper_plugin_json": {
+        "name": "claude-d3js",
+        "description": "d3-viz: a d3.js playbook for building custom, interactive data visualisations (force-directed network graphs, hierarchies, geographic projections, choreographed transitions, publication-quality SVG) beyond standard chart libraries. By Chris von Csefalvay.",
+        "author": {
+          "name": "Chris von Csefalvay",
+          "url": "https://github.com/chrisvoncsefalvay"
+        },
+        "homepage": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+        "repository": "https://github.com/chrisvoncsefalvay/claude-d3js-skill",
+        "license": "UNLICENSED (no upstream license — redistributed in good faith; removed on request; see SOURCE.md)",
+        "keywords": [
+          "d3",
+          "d3js",
+          "dataviz",
+          "visualization",
+          "svg",
+          "charts",
+          "interactive"
+        ]
+      }
     }
   ]
 }

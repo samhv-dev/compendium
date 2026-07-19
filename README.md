@@ -28,6 +28,14 @@ Full provenance also lives in each plugin's `SOURCE.md` and bundled `LICENSE`.
 | `improve` | Read-only codebase advisor → implementation plans | shadcn | [shadcn/improve](https://github.com/shadcn/improve) | MIT |
 | `ponytail` | Lazy-senior-dev / YAGNI over-engineering guard | Dietrich Gebert | [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) | MIT |
 | `emilkowalski-design` | Design-engineering & animation skills | Emil Kowalski | [emilkowalski/skills](https://github.com/emilkowalski/skills) | MIT |
+| `superpowers-extracts` | 5 general-discipline skills (verification, planning, skill-writing, debugging, brainstorming) | Jesse Vincent (obra) | [obra/superpowers](https://github.com/obra/superpowers) | MIT |
+| `tastemaker` | Gives an AI real design taste so UIs don't look AI-made | codeswithroh | [codeswithroh/tastemaker](https://github.com/codeswithroh/tastemaker) | MIT |
+| `onebreath` | Terse-answer constraints: `/1s` one sentence, `/1p` one paragraph | louixs | [louixs/onebreath](https://github.com/louixs/onebreath) | MIT |
+| `scientific-agent-skills` | 149 scientific & research skills (bio/chem/clinical/ML/lit-review/DBs) | K-Dense Inc. | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | MIT¹ |
+| `claude-d3js` | d3.js playbook for custom interactive data visualisations | Chris von Csefalvay | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | ⚠️ none² |
+
+¹ MIT for the collection; individual skills carry their own licence in each `SKILL.md`.
+² The upstream repository ships **no LICENSE file** (technically all-rights-reserved). It is redistributed here in good faith with full attribution, and **will be removed immediately on the author's request**.
 
 ## How updates work
 
