@@ -187,6 +187,28 @@
         "charts",
         "interactive"
       ]
+    },
+    {
+      "name": "autostar",
+      "source": "./plugins/autostar",
+      "description": "a* (autostar): a generalised autonomous optimisation loop — 'soft RLVR' for any artifact you can measure. Define measurable tracks, each with a verifier (deterministic / external-tool / LLM-judge / hybrid / human-gate), and it runs step→lap→round experiments with statistical confidence, mandatory reflection, a budget, persistent memory, and a live progress dashboard. By Chris von Csefalvay.",
+      "version": "0.1.0+g1f4a2f6",
+      "author": {
+        "name": "Chris von Csefalvay",
+        "url": "https://github.com/chrisvoncsefalvay"
+      },
+      "homepage": "https://github.com/chrisvoncsefalvay/autostar",
+      "repository": "https://github.com/chrisvoncsefalvay/autostar",
+      "license": "MIT",
+      "keywords": [
+        "optimisation",
+        "rlvr",
+        "verifier",
+        "evaluation",
+        "iterative-improvement",
+        "autonomous",
+        "self-improvement"
+      ]
     }
   ]
 }
