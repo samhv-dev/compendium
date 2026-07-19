@@ -34,6 +34,7 @@ Full provenance also lives in each plugin's `SOURCE.md` and bundled `LICENSE`.
 | `scientific-agent-skills` | 149 scientific & research skills (bio/chem/clinical/ML/lit-review/DBs) | K-Dense Inc. | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | MIT¹ |
 | `claude-d3js` | d3.js playbook for custom interactive data visualisations | Chris von Csefalvay | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | ⚠️ none² |
 | `autostar` | Autonomous optimisation loop ("soft RLVR") — measurable-goal → verifier-driven experiments | Chris von Csefalvay | [chrisvoncsefalvay/autostar](https://github.com/chrisvoncsefalvay/autostar) | MIT |
+| `science-superpowers` | 15 computational-science methodology skills (pre-registration, reproducibility, red-team review, verification) | K-Dense Inc. | [K-Dense-AI/science-superpowers](https://github.com/K-Dense-AI/science-superpowers) | MIT |
 
 ¹ MIT for the collection; individual skills carry their own licence in each `SKILL.md`.
 ² The upstream repository ships **no LICENSE file** (technically all-rights-reserved). It is redistributed here in good faith with full attribution, and **will be removed immediately on the author's request**.

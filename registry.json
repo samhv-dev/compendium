@@ -466,6 +466,45 @@
           "self-improvement"
         ]
       }
+    },
+    {
+      "name": "science-superpowers",
+      "kind": "skill-wrap",
+      "track": true,
+      "upstream": {
+        "owner": "K-Dense-AI",
+        "repo": "science-superpowers",
+        "ref": null
+      },
+      "skills_src": "skills",
+      "skills": "*",
+      "license_src": "LICENSE",
+      "version": {
+        "type": "sha",
+        "base": "0.1.0"
+      },
+      "source_note": "Vendored the 15 methodology skills only; the repo's multi-runtime hooks/scripts (AGENTS.md/GEMINI.md/hooks) are Claude-Code/other-runtime machinery and are not included.",
+      "wrapper_plugin_json": {
+        "name": "science-superpowers",
+        "description": "15 composable computational-science methodology skills for research agents: framing research questions, surveying prior work, designing + PRE-REGISTERING analysis, reproducible setup, executing, verifying-results-before-claiming, investigating anomalies, requesting red-team / receiving critical review, and reporting/archiving. 'Pre-registration over TDD.' A science-domain reimplementation of Superpowers, by K-Dense.",
+        "author": {
+          "name": "K-Dense Inc.",
+          "url": "https://github.com/K-Dense-AI"
+        },
+        "homepage": "https://github.com/K-Dense-AI/science-superpowers",
+        "repository": "https://github.com/K-Dense-AI/science-superpowers",
+        "license": "MIT",
+        "keywords": [
+          "science",
+          "methodology",
+          "preregistration",
+          "reproducibility",
+          "red-team",
+          "verification",
+          "research",
+          "rigor"
+        ]
+      }
     }
   ]
 }

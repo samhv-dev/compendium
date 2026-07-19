@@ -1,0 +1,22 @@
+{
+  "name": "science-superpowers",
+  "description": "15 composable computational-science methodology skills for research agents: framing research questions, surveying prior work, designing + PRE-REGISTERING analysis, reproducible setup, executing, verifying-results-before-claiming, investigating anomalies, requesting red-team / receiving critical review, and reporting/archiving. 'Pre-registration over TDD.' A science-domain reimplementation of Superpowers, by K-Dense.",
+  "author": {
+    "name": "K-Dense Inc.",
+    "url": "https://github.com/K-Dense-AI"
+  },
+  "homepage": "https://github.com/K-Dense-AI/science-superpowers",
+  "repository": "https://github.com/K-Dense-AI/science-superpowers",
+  "license": "MIT",
+  "keywords": [
+    "science",
+    "methodology",
+    "preregistration",
+    "reproducibility",
+    "red-team",
+    "verification",
+    "research",
+    "rigor"
+  ],
+  "version": "0.1.0+g3150a27"
+}
