@@ -1,13 +1,9 @@
 name: refresh plugins
 
-# Keeps every vendored plugin current with its upstream GitHub source and re-applies
-# the Cowork repackaging (skills-only; Claude-Code-only components stripped). Cowork's
-# marketplace auto-update then pulls any committed change to installed machines.
-
 on:
   schedule:
-    - cron: "17 6 * * 1"   # every Monday 06:17 UTC
-  workflow_dispatch: {}      # manual "Run workflow" button
+    - cron: "17 6 * * 1"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -17,16 +13,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Authenticate git for upstream clones
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config --global url."https://x-access-token:${GH_TOKEN}@github.com/".insteadOf "https://github.com/"
+
       - name: Re-vendor plugins from upstream
         run: python3 scripts/refresh.py
+
       - name: Commit changes if any
         run: |
           if [ -n "$(git status --porcelain)" ]; then
-            git config user.name  "compendium-bot"
-            git config user.email "actions@github.com"
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
             git commit -m "chore: refresh plugins from upstream ($(date -u +%Y-%m-%d))"
             git push
