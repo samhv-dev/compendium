@@ -109,7 +109,7 @@
       "name": "tastemaker",
       "source": "./plugins/tastemaker",
       "description": "Gives an AI real design taste so generated UIs don't look AI-made: grounds palettes in real pixels (deterministic extraction), five WCAG-contrast-checked palette+type presets, and a taste profile that compounds across projects. Repackaged for Cowork (the marketing site is not vendored).",
-      "version": "0.1.0+gfe6b9eb",
+      "version": "0.1.0+ge6bb72b",
       "author": {
         "name": "codeswithroh",
         "url": "https://github.com/codeswithroh"
@@ -145,7 +145,7 @@
       "name": "scientific-agent-skills",
       "source": "./plugins/scientific-agent-skills",
       "description": "148+ scientific & research skills from K-Dense (bioinformatics, cheminformatics, clinical research & precision medicine, medical imaging, ML, literature review, peer review, hypothesis generation, 100+ scientific databases). Repackaged for Cowork. Large plugin — disable individual skills you don't need; each skill's own license is preserved in its SKILL.md metadata.",
-      "version": "2.53.0+g3f825ca",
+      "version": "2.53.0+ga177179",
       "author": {
         "name": "K-Dense Inc.",
         "url": "https://github.com/K-Dense-AI"
