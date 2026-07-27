@@ -65,7 +65,7 @@
       "name": "emilkowalski-design",
       "source": "./plugins/emilkowalski-design",
       "description": "Design-engineering and animation skills from Emil Kowalski: UI polish and animation decisions, Apple-style fluid motion, a strict animation review, a codebase animation audit/planner, a find-animation-opportunities pass, and a reverse-lookup motion vocabulary.",
-      "version": "0.1.0+g6bf2443",
+      "version": "0.1.0+g70744e3",
       "author": {
         "name": "Emil Kowalski",
         "url": "https://github.com/emilkowalski"
@@ -87,7 +87,7 @@
       "name": "superpowers-extracts",
       "source": "./plugins/superpowers-extracts",
       "description": "Five general-purpose discipline skills extracted from Jesse Vincent's superpowers and repackaged for Cowork: verification-before-completion, writing-plans, writing-skills, systematic-debugging, and brainstorming. The code/git/agent-orchestration skills from superpowers are intentionally omitted.",
-      "version": "0.1.0+gd884ae0",
+      "version": "0.1.0+g3dcbd5c",
       "author": {
         "name": "Jesse Vincent (obra)",
         "url": "https://github.com/obra"
@@ -109,7 +109,7 @@
       "name": "tastemaker",
       "source": "./plugins/tastemaker",
       "description": "Gives an AI real design taste so generated UIs don't look AI-made: grounds palettes in real pixels (deterministic extraction), five WCAG-contrast-checked palette+type presets, and a taste profile that compounds across projects. Repackaged for Cowork (the marketing site is not vendored).",
-      "version": "0.1.0+gd1217d8",
+      "version": "0.1.0+g54e086e",
       "author": {
         "name": "codeswithroh",
         "url": "https://github.com/codeswithroh"
@@ -145,7 +145,7 @@
       "name": "scientific-agent-skills",
       "source": "./plugins/scientific-agent-skills",
       "description": "148+ scientific & research skills from K-Dense (bioinformatics, cheminformatics, clinical research & precision medicine, medical imaging, ML, literature review, peer review, hypothesis generation, 100+ scientific databases). Repackaged for Cowork. Large plugin — disable individual skills you don't need; each skill's own license is preserved in its SKILL.md metadata.",
-      "version": "2.53.0+ge872769",
+      "version": "2.53.0+g81e316b",
       "author": {
         "name": "K-Dense Inc.",
         "url": "https://github.com/K-Dense-AI"
@@ -214,7 +214,7 @@
       "name": "science-superpowers",
       "source": "./plugins/science-superpowers",
       "description": "15 composable computational-science methodology skills for research agents: framing research questions, surveying prior work, designing + PRE-REGISTERING analysis, reproducible setup, executing, verifying-results-before-claiming, investigating anomalies, requesting red-team / receiving critical review, and reporting/archiving. 'Pre-registration over TDD.' A science-domain reimplementation of Superpowers, by K-Dense.",
-      "version": "0.1.0+g3150a27",
+      "version": "0.1.0+gdf2a18e",
       "author": {
         "name": "K-Dense Inc.",
         "url": "https://github.com/K-Dense-AI"
