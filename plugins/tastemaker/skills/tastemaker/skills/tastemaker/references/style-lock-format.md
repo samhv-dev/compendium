@@ -73,6 +73,25 @@ The whole-page composition, recorded so a multi-page project stays coherent and 
 - Per-page body archetypes: <the hero/feature/proof/CTA picks per page, e.g. "landing: H2 split-demo · F1 bands · P1 logo-wall · C2 statement">
 - Build stamp / log: <note that `.tastemaker/log.json` carries the per-build record; the CSS stamp format is in `references/diversification.md`>
 
+## Reference intelligence
+See `references/reference-intelligence.md` before filling this section. It records the current quality bar and the design read that shaped the project.
+- Reference board: `.tastemaker/reference-board.md` <"viewed sources" | "inferred, not viewed">
+- Design read: <surface type> for <audience>, mode <Persuade|Operate|Read|Experience>, with <visual lane>
+- Dials: variance <1-10>, motion <1-10>, density <1-10>, art direction <1-10>
+- Foundation: <official design system | existing repo stack | custom aesthetic lane>, with dependency check result
+- Quality bar: <1-3 source names or inferred references and what they set>
+- Direction contract: Thesis <...>; First viewport <...>; System <...>; Risk <...>
+- Anti-references: <category defaults this project avoids>
+
+## Taste memory
+See `references/taste-memory.md` before filling this section. It records how user preference shaped this project and whether anything should carry into future projects.
+- Profile priors used: <1-3 entries read from `~/.tastemaker/profile.md`, or "none">
+- Decision log: `.tastemaker/decisions.log`
+- Last resolved decisions: <latest kept/rejected choices that affect this lock, with dates or short ids>
+- Pending review: <choices logged as pending-review that need user confirmation, or "none">
+- Profile promotion: <"none" | "promoted: <preference> to `~/.tastemaker/profile.md` because <evidence>">
+- Memory precedence note: <any conflict resolved between current request, project lock, decisions log, and profile>
+
 ## Navigation chrome
 Only for projects with an app shell (sidebar plus topbar) — see `references/component-patterns.md`'s App shell section. Omit this whole section for marketing-only projects.
 - Sidebar background: <role, e.g. "Surface"> · Content area background: <role, e.g. "Background">
@@ -96,8 +115,13 @@ Only for projects with an app shell (sidebar plus topbar) — see `references/co
 
 ## Motion
 - Feel: <e.g. "quick and restrained" | "soft and slightly bouncy" — should match the mood descriptors above>
+- Curves: <exact CSS variables or library spring values, e.g. `--ease-out: cubic-bezier(0.23, 1, 0.32, 1)`>
+- Durations: <press, popover, panel, page/story values>
 - Entrance duration/distance: <e.g. "220ms, 12px rise" — see references/animation-guidelines.md defaults if unset>
-- Easing: <e.g. "ease-out" | "cubic-bezier(0.16, 1, 0.3, 1)">
+- Screen tracks: <marketing pages use scroll storytelling; app shell uses panel/list/state motion; note any exceptions>
+- Frequency rules: <which repeated actions should not animate, or should use only near-instant feedback>
+- Reduced motion: <how movement degrades while preserving state feedback>
+- Verified by: <`scripts/audit_motion.py` paths + browser/DevTools feel check date, or "pending">
 
 ## Do not
 Concrete things to avoid for this project specifically, if any came up during curation (e.g. "no gradients — user rejected twice", "avoid rounded-full buttons, feels too playful for this brand").
