@@ -52,7 +52,7 @@
       "name": "ponytail",
       "source": "./plugins/ponytail",
       "description": "Lazy senior dev mode. Forces the simplest, shortest solution that actually works: YAGNI, stdlib first, no unrequested abstractions.",
-      "version": "4.8.4",
+      "version": "4.9.0",
       "author": {
         "name": "Dietrich Gebert",
         "url": "https://github.com/DietrichGebert"
@@ -65,7 +65,7 @@
       "name": "emilkowalski-design",
       "source": "./plugins/emilkowalski-design",
       "description": "Design-engineering and animation skills from Emil Kowalski: UI polish and animation decisions, Apple-style fluid motion, a strict animation review, a codebase animation audit/planner, a find-animation-opportunities pass, and a reverse-lookup motion vocabulary.",
-      "version": "0.1.0+gda80201",
+      "version": "0.1.0+g9075d17",
       "author": {
         "name": "Emil Kowalski",
         "url": "https://github.com/emilkowalski"
@@ -109,7 +109,7 @@
       "name": "tastemaker",
       "source": "./plugins/tastemaker",
       "description": "Gives an AI real design taste so generated UIs don't look AI-made: grounds palettes in real pixels (deterministic extraction), five WCAG-contrast-checked palette+type presets, and a taste profile that compounds across projects. Repackaged for Cowork (the marketing site is not vendored).",
-      "version": "0.1.0+g23d6fe1",
+      "version": "0.1.0+gb2f191f",
       "author": {
         "name": "codeswithroh",
         "url": "https://github.com/codeswithroh"
@@ -131,8 +131,8 @@
     {
       "name": "onebreath",
       "source": "./plugins/onebreath",
-      "description": "Claude Code slash commands that constrain response length/format: /onebreath:1s (one sentence) and /onebreath:1p (one paragraph).",
-      "version": "0.1.0",
+      "description": "Claude Code slash commands that constrain response length/format: /onebreath:1s (one sentence), /onebreath:1p (one paragraph) and /onebreath:bp (at most five bullets).",
+      "version": "0.2.0",
       "author": {
         "name": "louixs (10yx)",
         "url": "https://github.com/louixs"
@@ -145,7 +145,7 @@
       "name": "scientific-agent-skills",
       "source": "./plugins/scientific-agent-skills",
       "description": "148+ scientific & research skills from K-Dense (bioinformatics, cheminformatics, clinical research & precision medicine, medical imaging, ML, literature review, peer review, hypothesis generation, 100+ scientific databases). Repackaged for Cowork. Large plugin — disable individual skills you don't need; each skill's own license is preserved in its SKILL.md metadata.",
-      "version": "2.53.0+gad21a38",
+      "version": "2.53.0+g9b1d761",
       "author": {
         "name": "K-Dense Inc.",
         "url": "https://github.com/K-Dense-AI"
