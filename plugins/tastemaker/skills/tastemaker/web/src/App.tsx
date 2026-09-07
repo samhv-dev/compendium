@@ -18,6 +18,9 @@ import { RevealGroup } from "@/components/site/RevealGroup"
 import { Parallax, Float } from "@/components/site/Parallax"
 import { HeroTimeline } from "@/components/site/HeroTimeline"
 import { ScrollTriggerRefresh } from "@/components/site/ScrollTriggerRefresh"
+import { SponsorRail, AdvertiseModal, setSponsorCheckoutUrl } from "@/components/site/SponsorRail"
+
+setSponsorCheckoutUrl("https://buy.polar.sh/polar_cl_v360Z1xaM0O7QadiXzo5OlRjgaWGIZvxGhNir4LllXc")
 
 const INSTALL = "npx skills add codeswithroh/tastemaker"
 const REPO = "https://github.com/codeswithroh/tastemaker"
@@ -213,7 +216,9 @@ export default function App() {
         </div>
       </header>
 
-      <main id="main">
+      <main id="main" className="flex w-full items-start gap-4 min-[1680px]:px-6">
+        <SponsorRail side="left" />
+        <div className="min-w-0 flex-1">
         {/* hero — the transformation illustration is the whole pitch */}
         <section id="top" className="relative isolate overflow-hidden">
           <HeroTimeline />
@@ -378,6 +383,41 @@ export default function App() {
             <Reveal delay={420} className="mx-auto mt-10 max-w-[720px]">
               <CompareReveal />
             </Reveal>
+
+            <Reveal delay={480} className="mx-auto mt-16 max-w-[860px]">
+              <p className="text-center font-mono text-[0.72rem] font-bold tracking-wider text-muted-dark uppercase">
+                not a claim — a graph
+              </p>
+              <h3 className="mt-2 text-center font-display text-[1.6rem] font-extrabold text-foreground">
+                People keep showing up.
+              </h3>
+              <a
+                href="https://github.com/codeswithroh/tastemaker/stargazers"
+                target="_blank"
+                rel="noopener"
+                className="mt-8 block rounded-[22px] border border-border bg-card p-5 shadow-[0_20px_50px_rgba(23,21,20,0.1)] transition-transform duration-300 hover:-translate-y-1 sm:p-8"
+              >
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcSet="https://api.star-history.com/chart?repos=codeswithroh/tastemaker&type=date&theme=dark&legend=top-left&sealed_token=2Pdh2oaN9iVgW2nRbAFsc4tD8k-rqntdhu7BOtXj_kcRY5_GKzhq8-XW_6jGalrc9yyM5fqEe5gf-yAhmSTT2qNWxO2WibZO9cI_mHyUergN74Bvt0gIgw"
+                  />
+                  <img
+                    src="https://api.star-history.com/chart?repos=codeswithroh/tastemaker&type=date&legend=top-left&sealed_token=2Pdh2oaN9iVgW2nRbAFsc4tD8k-rqntdhu7BOtXj_kcRY5_GKzhq8-XW_6jGalrc9yyM5fqEe5gf-yAhmSTT2qNWxO2WibZO9cI_mHyUergN74Bvt0gIgw"
+                    alt="Star History chart for codeswithroh/tastemaker, showing GitHub stars accumulating over time"
+                    width={800}
+                    height={533}
+                    loading="lazy"
+                    className="w-full rounded-xl"
+                    style={{ aspectRatio: "800 / 533", height: "auto" }}
+                  />
+                </picture>
+              </a>
+              <p className="mt-4 text-center font-mono text-[0.78rem] text-muted-dark">
+                Live from GitHub.{" "}
+                <span className="text-gold">Star the repo</span> to add your point to the line.
+              </p>
+            </Reveal>
           </div>
         </section>
 
@@ -525,7 +565,11 @@ export default function App() {
             </Reveal>
           </div>
         </section>
+        </div>
+        <SponsorRail side="right" />
       </main>
+
+      <AdvertiseModal />
 
       <footer className="border-t border-ink/[0.08] py-10">
         <div className="mx-auto flex w-[min(1200px,calc(100%-40px))] flex-wrap items-center justify-between gap-6">
