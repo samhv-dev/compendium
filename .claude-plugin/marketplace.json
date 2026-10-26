@@ -87,7 +87,7 @@
       "name": "superpowers-extracts",
       "source": "./plugins/superpowers-extracts",
       "description": "Five general-purpose discipline skills extracted from Jesse Vincent's superpowers and repackaged for Cowork: verification-before-completion, writing-plans, writing-skills, systematic-debugging, and brainstorming. The code/git/agent-orchestration skills from superpowers are intentionally omitted.",
-      "version": "0.1.0+gbb92a77",
+      "version": "0.1.0+g2ce8aa1",
       "author": {
         "name": "Jesse Vincent (obra)",
         "url": "https://github.com/obra"
@@ -145,7 +145,7 @@
       "name": "scientific-agent-skills",
       "source": "./plugins/scientific-agent-skills",
       "description": "148+ scientific & research skills from K-Dense (bioinformatics, cheminformatics, clinical research & precision medicine, medical imaging, ML, literature review, peer review, hypothesis generation, 100+ scientific databases). Repackaged for Cowork. Large plugin — disable individual skills you don't need; each skill's own license is preserved in its SKILL.md metadata.",
-      "version": "2.53.0+g593377b",
+      "version": "2.53.0+g5f2bc03",
       "author": {
         "name": "K-Dense Inc.",
         "url": "https://github.com/K-Dense-AI"
