@@ -65,7 +65,7 @@
       "name": "emilkowalski-design",
       "source": "./plugins/emilkowalski-design",
       "description": "Design-engineering and animation skills from Emil Kowalski: UI polish and animation decisions, Apple-style fluid motion, a strict animation review, a codebase animation audit/planner, a find-animation-opportunities pass, and a reverse-lookup motion vocabulary.",
-      "version": "0.1.0+g715c180",
+      "version": "0.1.0+g64eb3de",
       "author": {
         "name": "Emil Kowalski",
         "url": "https://github.com/emilkowalski"
